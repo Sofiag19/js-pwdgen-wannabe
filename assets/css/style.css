@@ -4,17 +4,16 @@ body {
 }
 
 .wrapper {
-  width: 1200px;
+  width: 100%;
   margin:auto;
-  position: relative;
-}
-
-#pwdgen {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 1000px;
+}
+
+#pwdgen {
+  transform: scale(1);
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
@@ -23,7 +22,6 @@ body {
   text-align: center;
   text-shadow: 5px 5px 5px rgb(199, 45, 54);
   animation: zoom 5s linear;
-  transform: scale(1);
 }
 
 @keyframes zoom {
@@ -32,8 +30,16 @@ body {
     transform: scale(1);
   }
 
+  25% {
+    transform: rotate(25deg);
+  }
+
   50% {
     transform: scale(1.5);
+  }
+
+  75%{
+    transform: rotate(-25deg);
   }
 
   100% {
