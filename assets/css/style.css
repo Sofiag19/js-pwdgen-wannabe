@@ -21,6 +21,7 @@ body {
   text-align: center;
   text-shadow: 5px 5px 5px rgb(199, 45, 54);
   animation: zoom 5s linear;
+  transition: opacity 1s;
 }
 
 @keyframes zoom {
@@ -45,5 +46,8 @@ body {
   100% {
     transform: scale(1);
   }
+}
 
+#pwdgen:hover {
+  opacity: 0;
 }
