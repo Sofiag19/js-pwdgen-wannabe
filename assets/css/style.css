@@ -35,6 +35,7 @@ body {
 
   50% {
     transform: scale(1.5);
+    color: blue;
   }
 
   75%{
@@ -44,4 +45,5 @@ body {
   100% {
     transform: scale(1);
   }
+
 }
