@@ -1,20 +1,20 @@
-// richiesta nome
-var nome = prompt("Inserisci il tuo nome");
+// name request
+var name = prompt("Inserisci il tuo nome");
 
-// richiesta cognome
-var cognome = prompt("Inserisci il tuo cognome");
+// surname request
+var surname = prompt("Inserisci il tuo cognome");
 
-// nome completo
-var nomecompleto = nome + cognome;
+// complete name
+var completeName = name + surname;
 
-// richiesta colore preferito
-var colorepref = prompt("Inserisci il tuo colore preferito");
+// fovorite color request
+var favoriteColor = prompt("Inserisci il tuo colore preferito");
 
-// password completa
-var pswcomplete = nomecompleto + colorepref + 19;
+// complete password
+var completePsw = completeName + favoriteColor + 19;
 
-// password completa
-var results = "Ciao " + nomecompleto + ", la tua password è: " + pswcomplete;
+// message for user
+var results = "Ciao " + completeName + ", la tua password è: " + completePsw;
 
-// output in pagina 
+// page output
 document.getElementById('pwdgen').innerHTML = results;
