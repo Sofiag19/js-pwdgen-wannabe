@@ -13,7 +13,8 @@ var colorepref = prompt("Inserisci il tuo colore preferito");
 // password completa
 var pswcomplete = nomecompleto + colorepref + 19;
 
-// output in pagina
+// password completa
 var results = "Ciao " + nomecompleto + ", la tua password è: " + pswcomplete;
 
+// output in pagina 
 document.getElementById('pwdgen').innerHTML = results;
